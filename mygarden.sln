@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGarden.Web", "mygarden\MyGarden.Web.csproj", "{DDD28914-3ECE-4C6A-A5EB-29A6A0D85B15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGarden.Domain", "mygarden.domain\MyGarden.Domain.csproj", "{67529416-F94B-49AE-9EB8-E5BD18100BAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDD28914-3ECE-4C6A-A5EB-29A6A0D85B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD28914-3ECE-4C6A-A5EB-29A6A0D85B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD28914-3ECE-4C6A-A5EB-29A6A0D85B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD28914-3ECE-4C6A-A5EB-29A6A0D85B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67529416-F94B-49AE-9EB8-E5BD18100BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67529416-F94B-49AE-9EB8-E5BD18100BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67529416-F94B-49AE-9EB8-E5BD18100BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67529416-F94B-49AE-9EB8-E5BD18100BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C5F5DE2-2E11-4417-9CDB-ADB0642205F3}
+	EndGlobalSection
+EndGlobal
