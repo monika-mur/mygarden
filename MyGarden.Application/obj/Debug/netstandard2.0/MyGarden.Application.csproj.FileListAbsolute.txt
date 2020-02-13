@@ -1,0 +1,10 @@
+C:\mygarden\MyGarden.Application\bin\Debug\netstandard2.0\MyGarden.Application.deps.json
+C:\mygarden\MyGarden.Application\bin\Debug\netstandard2.0\MyGarden.Application.dll
+C:\mygarden\MyGarden.Application\bin\Debug\netstandard2.0\MyGarden.Application.pdb
+C:\mygarden\MyGarden.Application\bin\Debug\netstandard2.0\MyGarden.Domain.dll
+C:\mygarden\MyGarden.Application\bin\Debug\netstandard2.0\MyGarden.Domain.pdb
+C:\mygarden\MyGarden.Application\obj\Debug\netstandard2.0\MyGarden.Application.AssemblyInfoInputs.cache
+C:\mygarden\MyGarden.Application\obj\Debug\netstandard2.0\MyGarden.Application.AssemblyInfo.cs
+C:\mygarden\MyGarden.Application\obj\Debug\netstandard2.0\MyGarden.Application.csproj.CopyComplete
+C:\mygarden\MyGarden.Application\obj\Debug\netstandard2.0\MyGarden.Application.dll
+C:\mygarden\MyGarden.Application\obj\Debug\netstandard2.0\MyGarden.Application.pdb

@@ -104,11 +104,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\mygarden\\mygarden\\mygarden\\MyGarden.Web.csproj",
+      "projectUniqueName": "C:\\mygarden\\mygarden\\MyGarden.Web.csproj",
       "projectName": "MyGarden.Web",
-      "projectPath": "C:\\mygarden\\mygarden\\mygarden\\MyGarden.Web.csproj",
+      "projectPath": "C:\\mygarden\\mygarden\\MyGarden.Web.csproj",
       "packagesPath": "C:\\Users\\mmurawska\\.nuget\\packages\\",
-      "outputPath": "C:\\mygarden\\mygarden\\mygarden\\obj\\",
+      "outputPath": "C:\\mygarden\\mygarden\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -128,8 +128,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\mygarden\\mygarden\\mygarden.domain\\MyGarden.Domain.csproj": {
-              "projectPath": "C:\\mygarden\\mygarden\\mygarden.domain\\MyGarden.Domain.csproj"
+            "C:\\mygarden\\MyGarden.Domain\\MyGarden.Domain.csproj": {
+              "projectPath": "C:\\mygarden\\MyGarden.Domain\\MyGarden.Domain.csproj"
             }
           }
         }

@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\mygarden\\mygarden\\mygarden.domain\\mygarden.domain.csproj",
-      "projectName": "mygarden.domain",
-      "projectPath": "C:\\mygarden\\mygarden\\mygarden.domain\\mygarden.domain.csproj",
+      "projectUniqueName": "C:\\mygarden\\mygarden.domain\\MyGarden.Domain.csproj",
+      "projectName": "MyGarden.Domain",
+      "projectPath": "C:\\mygarden\\mygarden.domain\\MyGarden.Domain.csproj",
       "packagesPath": "C:\\Users\\mmurawska\\.nuget\\packages\\",
-      "outputPath": "C:\\mygarden\\mygarden\\mygarden.domain\\obj\\",
+      "outputPath": "C:\\mygarden\\mygarden.domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
