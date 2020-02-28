@@ -1,6 +1,6 @@
 ﻿namespace MyGarden.Domain
 {
-    public class PlantSpacing
+    public class PlantSpacing : ValueObject
     {
         public int Minimal { get; set; }
         public int Maximal { get; set; }

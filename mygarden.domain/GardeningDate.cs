@@ -2,7 +2,7 @@
 
 namespace MyGarden.Domain
 {
-    public class GardeningDate
+    public class GardeningDate : ValueObject
     {
         public IEnumerable<Month> Months { get; }
 
@@ -26,7 +26,7 @@ namespace MyGarden.Domain
         }
     }
 
-    public class Duration
+    public class Duration : ValueObject
     {
         public int Quantity { get; set; }
         public TimeUnit TimeUnit { get; set; }
