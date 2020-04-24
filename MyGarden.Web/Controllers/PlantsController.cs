@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using MyGarden.Domain;
+using MyGarden.GardenKnowledge.Domain;
 
 namespace MyGarden.Controllers
 {
@@ -9,11 +10,11 @@ namespace MyGarden.Controllers
     public class PlantsController : ControllerBase
     {
         [HttpGet]
-        public IEnumerable<Plant> GetAvailablePlants()
+        public IEnumerable<PlantCharacteristics> GetAvailablePlants()
         {
-            return new List<Plant>
+            return new List<PlantCharacteristics>
             {
-                new Plant(
+                new PlantCharacteristics(
                     "Chaber bławatek",
                     Language.Polish,
                     "Centaurea cyanus",
@@ -21,7 +22,7 @@ namespace MyGarden.Controllers
                     new PlantSpacing(20, 30, Measure.Centimeter),
                     new GardeningDate(new Duration(10, TimeUnit.Week))
                 ),
-                new Plant(
+                new PlantCharacteristics(
                     "Czarnuszka damasceńska",
                     Language.Polish,
                     "Nigella damascena",
@@ -29,7 +30,7 @@ namespace MyGarden.Controllers
                     null,
                     null
                 ),
-                new Plant(
+                new PlantCharacteristics(
                     "Dynia ozdobna",
                     Language.Polish,
                     "Cucurbita pepo",

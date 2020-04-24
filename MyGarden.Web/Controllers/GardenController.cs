@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyGarden.Domain;
-using MyGarden.Infrastructure;
-using System;
+using MyGarden.Domain.Garden;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MyGarden.Web.Controllers
 {
@@ -14,13 +10,13 @@ namespace MyGarden.Web.Controllers
     {
         private readonly IGardenRepository _gardenRepository;
 
-        public GardenController(IGardenRepository gardenService)
+        public GardenController(IGardenRepository gardenRepository)
         {
-            _gardenRepository = gardenService;
+            _gardenRepository = gardenRepository;
         }
 
         [HttpGet]
-        public IEnumerable<Plant> GetAllPlants()
+        public IEnumerable<Plant> GetAllPlantsForGardener()
         {
             const int gardenerId = 1;
 

@@ -1,16 +1,12 @@
-﻿using MyGarden.Domain;
+﻿using MyGarden.Domain.Garden;
+using MyGarden.Identifiers;
 using System.Collections.Generic;
 
 namespace MyGarden.Infrastructure
 {
-    public interface IGardenRepository
-    {
-        IEnumerable<Plant> GetPlantsForGardener(int gardenerId);
-    }
-
     public class GardenRepository : IGardenRepository
     {
-        public IEnumerable<Plant> GetPlantsForGardener(int gardenerId)
+        public IEnumerable<Plant> GetPlantsForGardener(UserId gardenerId)
         {
             throw new System.NotImplementedException();
         }

@@ -1695,11 +1695,24 @@
       "MyGarden.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MyGarden.Identifiers": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/MyGarden.Domain.dll": {}
         },
         "runtime": {
           "bin/placeholder/MyGarden.Domain.dll": {}
+        }
+      },
+      "MyGarden.Identifiers/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/MyGarden.Identifiers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyGarden.Identifiers.dll": {}
         }
       }
     }
@@ -6105,12 +6118,18 @@
       "type": "project",
       "path": "../mygarden.domain/MyGarden.Domain.csproj",
       "msbuildProject": "../mygarden.domain/MyGarden.Domain.csproj"
+    },
+    "MyGarden.Identifiers/1.0.0": {
+      "type": "project",
+      "path": "../MyGarden.Identifiers/MyGarden.Identifiers.csproj",
+      "msbuildProject": "../MyGarden.Identifiers/MyGarden.Identifiers.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.2",
       "MyGarden.Domain >= 1.0.0",
+      "MyGarden.Identifiers >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -6145,8 +6164,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\mygarden\\mygarden.domain\\MyGarden.Domain.csproj": {
-              "projectPath": "C:\\mygarden\\mygarden.domain\\MyGarden.Domain.csproj"
+            "C:\\mygarden\\MyGarden.Domain\\MyGarden.Domain.csproj": {
+              "projectPath": "C:\\mygarden\\MyGarden.Domain\\MyGarden.Domain.csproj"
+            },
+            "C:\\mygarden\\MyGarden.Identifiers\\MyGarden.Identifiers.csproj": {
+              "projectPath": "C:\\mygarden\\MyGarden.Identifiers\\MyGarden.Identifiers.csproj"
             }
           }
         }

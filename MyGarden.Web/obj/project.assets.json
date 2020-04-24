@@ -1290,6 +1290,9 @@
       "MyGarden.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MyGarden.Identifiers": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/MyGarden.Domain.dll": {}
         },
@@ -1297,12 +1300,23 @@
           "bin/placeholder/MyGarden.Domain.dll": {}
         }
       },
+      "MyGarden.Identifiers/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/MyGarden.Identifiers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyGarden.Identifiers.dll": {}
+        }
+      },
       "MyGarden.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.2",
-          "MyGarden.Domain": "1.0.0"
+          "MyGarden.Domain": "1.0.0",
+          "MyGarden.Identifiers": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MyGarden.Infrastructure.dll": {}
@@ -5020,6 +5034,11 @@
       "path": "../mygarden.domain/MyGarden.Domain.csproj",
       "msbuildProject": "../mygarden.domain/MyGarden.Domain.csproj"
     },
+    "MyGarden.Identifiers/1.0.0": {
+      "type": "project",
+      "path": "../MyGarden.Identifiers/MyGarden.Identifiers.csproj",
+      "msbuildProject": "../MyGarden.Identifiers/MyGarden.Identifiers.csproj"
+    },
     "MyGarden.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../MyGarden.Infrastructure/MyGarden.Infrastructure.csproj",
@@ -5031,6 +5050,7 @@
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.9.5",
       "MyGarden.Application >= 1.0.0",
       "MyGarden.Domain >= 1.0.0",
+      "MyGarden.Identifiers >= 1.0.0",
       "MyGarden.Infrastructure >= 1.0.0"
     ]
   },
@@ -5070,6 +5090,9 @@
             },
             "C:\\mygarden\\MyGarden.Domain\\MyGarden.Domain.csproj": {
               "projectPath": "C:\\mygarden\\MyGarden.Domain\\MyGarden.Domain.csproj"
+            },
+            "C:\\mygarden\\MyGarden.Identifiers\\MyGarden.Identifiers.csproj": {
+              "projectPath": "C:\\mygarden\\MyGarden.Identifiers\\MyGarden.Identifiers.csproj"
             },
             "C:\\mygarden\\MyGarden.Infrastructure\\MyGarden.Infrastructure.csproj": {
               "projectPath": "C:\\mygarden\\MyGarden.Infrastructure\\MyGarden.Infrastructure.csproj"

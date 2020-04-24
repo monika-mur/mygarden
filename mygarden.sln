@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.29318.209
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyGarden.Domain", "mygarden.domain\MyGarden.Domain.csproj", "{67529416-F94B-49AE-9EB8-E5BD18100BAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGarden.Application", "MyGarden.Application\MyGarden.Application.csproj", "{5A174CEF-0454-4287-B8A5-8D026407C8F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyGarden.Application", "MyGarden.Application\MyGarden.Application.csproj", "{5A174CEF-0454-4287-B8A5-8D026407C8F8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyGarden.Web", "MyGarden.Web\MyGarden.Web.csproj", "{C16639BA-0EEB-43A9-8517-D64EA9B411A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGarden.Infrastructure", "MyGarden.Infrastructure\MyGarden.Infrastructure.csproj", "{792293CE-B798-4B87-8B3F-BB496AD64579}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyGarden.Infrastructure", "MyGarden.Infrastructure\MyGarden.Infrastructure.csproj", "{792293CE-B798-4B87-8B3F-BB496AD64579}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGarden.Identifiers", "MyGarden.Identifiers\MyGarden.Identifiers.csproj", "{233C2588-D7BA-4069-8F9E-CB14CD97EC1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{792293CE-B798-4B87-8B3F-BB496AD64579}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{792293CE-B798-4B87-8B3F-BB496AD64579}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{792293CE-B798-4B87-8B3F-BB496AD64579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{233C2588-D7BA-4069-8F9E-CB14CD97EC1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{233C2588-D7BA-4069-8F9E-CB14CD97EC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{233C2588-D7BA-4069-8F9E-CB14CD97EC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{233C2588-D7BA-4069-8F9E-CB14CD97EC1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "MyGarden.Identifiers/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/MyGarden.Identifiers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyGarden.Identifiers.dll": {}
+        }
       }
     }
   },
@@ -171,10 +181,16 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "MyGarden.Identifiers/1.0.0": {
+      "type": "project",
+      "path": "../MyGarden.Identifiers/MyGarden.Identifiers.csproj",
+      "msbuildProject": "../MyGarden.Identifiers/MyGarden.Identifiers.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "MyGarden.Identifiers >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -208,7 +224,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\mygarden\\MyGarden.Identifiers\\MyGarden.Identifiers.csproj": {
+              "projectPath": "C:\\mygarden\\MyGarden.Identifiers\\MyGarden.Identifiers.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

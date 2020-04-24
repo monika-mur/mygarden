@@ -1,7 +1,4 @@
-﻿using MyGarden.Domain;
-using System.Collections.Generic;
-
-namespace MyGarden.Application
+﻿namespace MyGarden.Application
 {
     public interface IGardenService
     {

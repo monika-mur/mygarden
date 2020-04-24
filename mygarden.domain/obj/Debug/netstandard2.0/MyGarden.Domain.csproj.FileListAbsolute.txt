@@ -9,8 +9,11 @@ C:\mygarden\mygarden\mygarden.domain\obj\Debug\netstandard2.0\MyGarden.Domain.pd
 C:\mygarden\mygarden.domain\bin\Debug\netstandard2.0\MyGarden.Domain.deps.json
 C:\mygarden\mygarden.domain\bin\Debug\netstandard2.0\MyGarden.Domain.dll
 C:\mygarden\mygarden.domain\bin\Debug\netstandard2.0\MyGarden.Domain.pdb
+C:\mygarden\mygarden.domain\bin\Debug\netstandard2.0\MyGarden.Identifiers.dll
+C:\mygarden\mygarden.domain\bin\Debug\netstandard2.0\MyGarden.Identifiers.pdb
 C:\mygarden\mygarden.domain\obj\Debug\netstandard2.0\MyGarden.Domain.csprojAssemblyReference.cache
 C:\mygarden\mygarden.domain\obj\Debug\netstandard2.0\MyGarden.Domain.AssemblyInfoInputs.cache
 C:\mygarden\mygarden.domain\obj\Debug\netstandard2.0\MyGarden.Domain.AssemblyInfo.cs
+C:\mygarden\mygarden.domain\obj\Debug\netstandard2.0\MyGarden.Domain.csproj.CopyComplete
 C:\mygarden\mygarden.domain\obj\Debug\netstandard2.0\MyGarden.Domain.dll
 C:\mygarden\mygarden.domain\obj\Debug\netstandard2.0\MyGarden.Domain.pdb

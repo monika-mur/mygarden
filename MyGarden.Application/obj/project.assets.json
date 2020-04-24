@@ -29,11 +29,24 @@
       "MyGarden.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MyGarden.Identifiers": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/MyGarden.Domain.dll": {}
         },
         "runtime": {
           "bin/placeholder/MyGarden.Domain.dll": {}
+        }
+      },
+      "MyGarden.Identifiers/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/MyGarden.Identifiers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyGarden.Identifiers.dll": {}
         }
       }
     }
@@ -186,6 +199,11 @@
       "type": "project",
       "path": "../mygarden.domain/MyGarden.Domain.csproj",
       "msbuildProject": "../mygarden.domain/MyGarden.Domain.csproj"
+    },
+    "MyGarden.Identifiers/1.0.0": {
+      "type": "project",
+      "path": "../MyGarden.Identifiers/MyGarden.Identifiers.csproj",
+      "msbuildProject": "../MyGarden.Identifiers/MyGarden.Identifiers.csproj"
     }
   },
   "projectFileDependencyGroups": {

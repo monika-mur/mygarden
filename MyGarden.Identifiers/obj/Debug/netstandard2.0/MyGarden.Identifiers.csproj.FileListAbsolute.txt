@@ -1,0 +1,7 @@
+C:\mygarden\MyGarden.Identifiers\bin\Debug\netstandard2.0\MyGarden.Identifiers.deps.json
+C:\mygarden\MyGarden.Identifiers\bin\Debug\netstandard2.0\MyGarden.Identifiers.dll
+C:\mygarden\MyGarden.Identifiers\bin\Debug\netstandard2.0\MyGarden.Identifiers.pdb
+C:\mygarden\MyGarden.Identifiers\obj\Debug\netstandard2.0\MyGarden.Identifiers.AssemblyInfoInputs.cache
+C:\mygarden\MyGarden.Identifiers\obj\Debug\netstandard2.0\MyGarden.Identifiers.AssemblyInfo.cs
+C:\mygarden\MyGarden.Identifiers\obj\Debug\netstandard2.0\MyGarden.Identifiers.dll
+C:\mygarden\MyGarden.Identifiers\obj\Debug\netstandard2.0\MyGarden.Identifiers.pdb

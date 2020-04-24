@@ -23,8 +23,16 @@
         }
       },
       "MyGarden.Domain/1.0.0": {
+        "dependencies": {
+          "MyGarden.Identifiers": "1.0.0"
+        },
         "runtime": {
           "MyGarden.Domain.dll": {}
+        }
+      },
+      "MyGarden.Identifiers/1.0.0": {
+        "runtime": {
+          "MyGarden.Identifiers.dll": {}
         }
       }
     }
@@ -50,6 +58,11 @@
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
     "MyGarden.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyGarden.Identifiers/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

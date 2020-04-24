@@ -93,6 +93,69 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "projectReferences": {
+              "C:\\mygarden\\MyGarden.Identifiers\\MyGarden.Identifiers.csproj": {
+                "projectPath": "C:\\mygarden\\MyGarden.Identifiers\\MyGarden.Identifiers.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\mygarden\\MyGarden.Identifiers\\MyGarden.Identifiers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\mygarden\\MyGarden.Identifiers\\MyGarden.Identifiers.csproj",
+        "projectName": "MyGarden.Identifiers",
+        "projectPath": "C:\\mygarden\\MyGarden.Identifiers\\MyGarden.Identifiers.csproj",
+        "packagesPath": "C:\\Users\\mmurawska\\.nuget\\packages\\",
+        "outputPath": "C:\\mygarden\\MyGarden.Identifiers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mmurawska\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://vsts.ecovadis-itlab.com/EcoVadisApp_TeamProjectCollection/_packaging/EvPackages/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
             "projectReferences": {}
           }
         },
@@ -153,8 +216,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\mygarden\\mygarden.domain\\MyGarden.Domain.csproj": {
-                "projectPath": "C:\\mygarden\\mygarden.domain\\MyGarden.Domain.csproj"
+              "C:\\mygarden\\MyGarden.Domain\\MyGarden.Domain.csproj": {
+                "projectPath": "C:\\mygarden\\MyGarden.Domain\\MyGarden.Domain.csproj"
+              },
+              "C:\\mygarden\\MyGarden.Identifiers\\MyGarden.Identifiers.csproj": {
+                "projectPath": "C:\\mygarden\\MyGarden.Identifiers\\MyGarden.Identifiers.csproj"
               }
             }
           }
@@ -225,6 +291,9 @@
               },
               "C:\\mygarden\\MyGarden.Domain\\MyGarden.Domain.csproj": {
                 "projectPath": "C:\\mygarden\\MyGarden.Domain\\MyGarden.Domain.csproj"
+              },
+              "C:\\mygarden\\MyGarden.Identifiers\\MyGarden.Identifiers.csproj": {
+                "projectPath": "C:\\mygarden\\MyGarden.Identifiers\\MyGarden.Identifiers.csproj"
               },
               "C:\\mygarden\\MyGarden.Infrastructure\\MyGarden.Infrastructure.csproj": {
                 "projectPath": "C:\\mygarden\\MyGarden.Infrastructure\\MyGarden.Infrastructure.csproj"

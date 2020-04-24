@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MyGarden.Application\MyGarden.Application.csproj" />
     <ProjectReference Include="..\MyGarden.Domain\MyGarden.Domain.csproj" />
+    <ProjectReference Include="..\MyGarden.Identifiers\MyGarden.Identifiers.csproj" />
     <ProjectReference Include="..\MyGarden.Infrastructure\MyGarden.Infrastructure.csproj" />
   </ItemGroup>
 
