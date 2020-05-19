@@ -14,7 +14,7 @@ namespace MyGarden.Web.Controllers
     {
         private readonly IPlantKnowledgeRepository _plantKnowledgeRepository;
 
-        public PlantKnowledgeController(IPlantKnowledgeRepository plantKnowledgeRepository)
+        public GardenKnowledgeController(IPlantKnowledgeRepository plantKnowledgeRepository)
         {
             _plantKnowledgeRepository = plantKnowledgeRepository;
         }

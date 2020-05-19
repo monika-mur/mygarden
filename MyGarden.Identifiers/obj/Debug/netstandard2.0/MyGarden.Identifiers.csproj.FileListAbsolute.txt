@@ -5,3 +5,4 @@ C:\mygarden\MyGarden.Identifiers\obj\Debug\netstandard2.0\MyGarden.Identifiers.A
 C:\mygarden\MyGarden.Identifiers\obj\Debug\netstandard2.0\MyGarden.Identifiers.AssemblyInfo.cs
 C:\mygarden\MyGarden.Identifiers\obj\Debug\netstandard2.0\MyGarden.Identifiers.dll
 C:\mygarden\MyGarden.Identifiers\obj\Debug\netstandard2.0\MyGarden.Identifiers.pdb
+C:\mygarden\MyGarden.Identifiers\obj\Debug\netstandard2.0\MyGarden.Identifiers.csprojAssemblyReference.cache

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyGarden.Domain.Garden;
+using MyGarden.Identifiers;
 using System.Collections.Generic;
 
 namespace MyGarden.Web.Controllers
@@ -20,7 +21,7 @@ namespace MyGarden.Web.Controllers
         {
             const int gardenerId = 1;
 
-            return _gardenRepository.GetPlantsForGardener(gardenerId);
+            return _gardenRepository.GetPlantsForGardener(new UserId(gardenerId));
         }
     }
 }

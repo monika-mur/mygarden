@@ -16,7 +16,6 @@ namespace MyGarden.Controllers
             {
                 new PlantCharacteristics(
                     "Chaber bławatek",
-                    Language.Polish,
                     "Centaurea cyanus",
                     new GardeningDate(new [] {Month.March, Month.April}),
                     new PlantSpacing(20, 30, Measure.Centimeter),
@@ -24,7 +23,6 @@ namespace MyGarden.Controllers
                 ),
                 new PlantCharacteristics(
                     "Czarnuszka damasceńska",
-                    Language.Polish,
                     "Nigella damascena",
                     new GardeningDate(new [] {Season.EarlySpring, Season.Autumn}),
                     null,
@@ -32,7 +30,6 @@ namespace MyGarden.Controllers
                 ),
                 new PlantCharacteristics(
                     "Dynia ozdobna",
-                    Language.Polish,
                     "Cucurbita pepo",
                     null,
                     null,
