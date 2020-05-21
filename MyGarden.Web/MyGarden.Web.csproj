@@ -18,4 +18,8 @@
     <ProjectReference Include="..\MyGarden.Infrastructure\MyGarden.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

@@ -23,7 +23,8 @@ namespace MyGarden
             services.AddControllers();
 
             services.AddDbContext<GardenDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
+                b => b.MigrationsAssembly("MyGarden.Web")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

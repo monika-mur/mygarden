@@ -19,7 +19,6 @@ namespace MyGarden.Infrastructure
         {
             builder.ApplyConfiguration(new PlantCharacteristicsConfiguration());
             builder.ApplyConfiguration(new GardenConfiguration());
-            builder.ApplyConfiguration(new PlantConfiguration());
 
             builder.Entity<User>().ToTable("Users");
         }
