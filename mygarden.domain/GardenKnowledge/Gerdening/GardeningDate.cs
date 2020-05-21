@@ -5,6 +5,8 @@ namespace MyGarden.GardenKnowledge.Domain
 {
     public class GardeningDate : ValueObject
     {
+        protected GardeningDate() { }
+
         public IEnumerable<Month> Months { get; }
 
         public IEnumerable<Season> Seasons { get; }
@@ -25,17 +27,30 @@ namespace MyGarden.GardenKnowledge.Domain
         {
             Duration = duration;
         }
+
+        protected override IEnumerable<object> GetAtomicValues()
+        {
+            yield return Months;
+            yield return Seasons;
+            yield return Duration;
+        }
     }
 
     public class Duration : ValueObject
     {
-        public int Quantity { get; set; }
-        public TimeUnit TimeUnit { get; set; }
+        public int Quantity { get; }
+        public TimeUnit TimeUnit { get; }
 
         public Duration(int quantity, TimeUnit timeUnit)
         {
             Quantity = quantity;
             TimeUnit = timeUnit;
+        }
+
+        protected override IEnumerable<object> GetAtomicValues()
+        {
+            yield return Quantity;
+            yield return TimeUnit;
         }
     }
 

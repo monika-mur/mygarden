@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MyGarden.Domain;
 using MyGarden.Domain.Garden;
+using MyGarden.Infrastructure.Configurations;
 
 namespace MyGarden.Infrastructure
 {
@@ -12,10 +13,14 @@ namespace MyGarden.Infrastructure
 
         public DbSet<Garden> Gardens { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<PlantCharacteristics> Plants { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.Entity<Garden>().ToTable("Garden");
+            builder.ApplyConfiguration(new PlantCharacteristicsConfiguration());
+            builder.ApplyConfiguration(new GardenConfiguration());
+            builder.ApplyConfiguration(new PlantConfiguration());
+
             builder.Entity<User>().ToTable("Users");
         }
     }

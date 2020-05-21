@@ -5,11 +5,13 @@ namespace MyGarden.Domain
 {
     public class PlantCharacteristics : Entity<Guid>
     {
-        public string Name { get;}
-        public string LatinName { get; }
-        public GardeningDate SowingDate { get; }
-        public PlantSpacing Spacing { get; }
-        public GardeningDate FloweringTime { get; }
+        public string Name { get; protected set; }
+        public string LatinName { get; protected set; }
+        public GardeningDate SowingDate { get; protected set; }
+        public PlantSpacing Spacing { get; protected set; }
+        public GardeningDate FloweringTime { get; protected set; }
+
+        protected PlantCharacteristics() { }
 
         public PlantCharacteristics(string name, string latinName, GardeningDate sowingDate, PlantSpacing spacing, GardeningDate floweringTime)
         {

@@ -1,4 +1,6 @@
-﻿namespace MyGarden.Domain
+﻿using System.Collections.Generic;
+
+namespace MyGarden.Domain
 {
     public class PlantSpacing : ValueObject
     {
@@ -11,6 +13,13 @@
             Minimal = minimal;
             Maximal = maximal;
             Measure = measure;
+        }
+
+        protected override IEnumerable<object> GetAtomicValues()
+        {
+            yield return Minimal;
+            yield return Maximal;
+            yield return Measure;
         }
     }
 
