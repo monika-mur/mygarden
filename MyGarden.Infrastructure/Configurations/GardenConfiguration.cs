@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using MyGarden.Domain.Garden;
-using MyGarden.Infrastructure;
 
 namespace MyGarden.Infrastructure.Configurations
 {
@@ -15,11 +14,8 @@ namespace MyGarden.Infrastructure.Configurations
                 .HasConversion(Converters.UserIdConverter);
             builder.OwnsMany(t => t.Plants, s =>
             {
-                s.OwnsMany(t => t.CompletedActions, f =>
-                {
-                    f.OwnsOne(t => t.Action,
-                        m => m.OwnsOne(t => t.Time));
-                });
+                s.OwnsMany(t => t.CompletedActions)
+                    .HasOne(t => t.Action);
             });
         }
     }
