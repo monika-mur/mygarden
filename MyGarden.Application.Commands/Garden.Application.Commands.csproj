@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\mygarden.domain\MyGarden.Domain.csproj" />
+    <ProjectReference Include="..\CommandBase\CommandBase.csproj" />
   </ItemGroup>
 
 </Project>

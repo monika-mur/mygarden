@@ -12,10 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MyGarden.Application\MyGarden.Application.csproj" />
-    <ProjectReference Include="..\MyGarden.Domain\MyGarden.Domain.csproj" />
-    <ProjectReference Include="..\MyGarden.Identifiers\MyGarden.Identifiers.csproj" />
-    <ProjectReference Include="..\MyGarden.Infrastructure\MyGarden.Infrastructure.csproj" />
+    <ProjectReference Include="..\MyGarden.Application\Garden.Application.Queries.csproj" />
+    <ProjectReference Include="..\mygarden.domain\Garden.Domain.csproj" />
+    <ProjectReference Include="..\MyGarden.Identifiers\Garden.Identifiers.csproj" />
+    <ProjectReference Include="..\MyGarden.Infrastructure\Garden.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
