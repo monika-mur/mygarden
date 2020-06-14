@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CommandBase\CommandBase.csproj" />
+    <ProjectReference Include="..\MyGarden.Contract\Garden.Contract.Commands.csproj" />
   </ItemGroup>
 
 </Project>

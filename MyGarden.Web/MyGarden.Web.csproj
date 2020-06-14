@@ -7,12 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.4" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MyGarden.Application\Garden.Application.Queries.csproj" />
+    <ProjectReference Include="..\MyGarden.Contract\Garden.Contract.Commands.csproj" />
     <ProjectReference Include="..\mygarden.domain\Garden.Domain.csproj" />
     <ProjectReference Include="..\MyGarden.Identifiers\Garden.Identifiers.csproj" />
     <ProjectReference Include="..\MyGarden.Infrastructure\Garden.Infrastructure.csproj" />
