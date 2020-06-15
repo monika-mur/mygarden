@@ -6,9 +6,9 @@ using MyGarden.Contract.Commands;
 
 namespace MyGarden.Application.Commands
 {
-    public class CompleteActionCommandHandler : ICommandHandler<CompleteActionCommand>
+    public class CompleteActionCommandHandler : ICommandHandler<CompleteActionCommand, int>
     {
-        public Task<Unit> Handle(ICommand request, CancellationToken cancellationToken)
+        public Task<int> Handle(CompleteActionCommand request, CancellationToken cancellationToken)
         {
             throw new System.NotImplementedException();
         }

@@ -1,3 +1,5 @@
+using AutoMapper;
+using Garden.Application.Commands.GardenKnowledge;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -5,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyGarden.Infrastructure;
+using System.Reflection;
 
 namespace MyGarden
 {
@@ -20,11 +23,19 @@ namespace MyGarden
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "My Garden API", Version = "v1" });
+            });
+
             services.AddControllers();
 
             services.AddDbContext<GardenDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
                 b => b.MigrationsAssembly("MyGarden.Web")));
+
+            var config = new MapperConfiguration(c => c.AddMaps(typeof(AddPlantCharacteristicsCommandHandler).Assembly));
+            services.AddSingleton<IMapper>(s => config.CreateMapper());         
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

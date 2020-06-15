@@ -7,12 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.4" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.4.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MyGarden.Application.Commands\Garden.Application.Commands.csproj" />
     <ProjectReference Include="..\MyGarden.Application\Garden.Application.Queries.csproj" />
     <ProjectReference Include="..\MyGarden.Contract\Garden.Contract.Commands.csproj" />
     <ProjectReference Include="..\mygarden.domain\Garden.Domain.csproj" />

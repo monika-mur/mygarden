@@ -3,7 +3,7 @@ using CommandBase;
 
 namespace MyGarden.Contract.Commands
 {
-    public class CompleteActionCommand : CompleteActionRequest, ICommand
+    public class CompleteActionCommand : CompleteActionRequest, ICommand<int>
     {
     }
 }
