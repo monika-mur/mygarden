@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Garden.Contract.Commands.GardenKnowledge;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 
 namespace MyGarden.Web.Controllers
 {
@@ -27,10 +28,12 @@ namespace MyGarden.Web.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> AddPlantCharacteristics([FromBody]AddPlantCharacteristicsCommand command)
         {
             var commandResult = await _mediator.Send(command);
-            return (IActionResult)commandResult;
+            return commandResult > 0 ? (IActionResult)new OkObjectResult(commandResult) : new BadRequestResult();
         }
     }
 }

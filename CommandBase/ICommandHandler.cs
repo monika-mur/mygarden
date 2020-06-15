@@ -1,10 +1,8 @@
 ﻿using MediatR;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace CommandBase
 {
-    public interface ICommandHandler : IRequestHandler<IRequest>
+    public interface ICommandHandler<TRequest, TResponse> : IRequestHandler<TRequest, TResponse> where TRequest : IRequest<TResponse>
     {
     }
 }

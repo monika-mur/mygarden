@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Garden.Contract.Commands.GardenKnowledge
 {
-    public class AddPlantCharacteristicsCommand : ICommand
+    public class AddPlantCharacteristicsCommand : ICommand<int>
     {
         public string Name { get; set; }
         public string LatinName { get; set; }
