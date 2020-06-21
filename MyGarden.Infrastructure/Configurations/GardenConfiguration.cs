@@ -4,9 +4,9 @@ using MyGarden.Domain.Garden;
 
 namespace MyGarden.Infrastructure.Configurations
 {
-    public class GardenConfiguration : IEntityTypeConfiguration<Garden>
+    public class GardenConfiguration : IEntityTypeConfiguration<GardenModel>
     {
-        public void Configure(EntityTypeBuilder<Garden> builder)
+        public void Configure(EntityTypeBuilder<GardenModel> builder)
         {
             builder.ToTable("Garden");
             builder.Property(t => t.UserId)

@@ -11,7 +11,7 @@ namespace MyGarden.Infrastructure
         {
         }
 
-        public DbSet<Garden> Gardens { get; set; }
+        public DbSet<GardenModel> Gardens { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<PlantCharacteristics> Plants { get; set; }
 

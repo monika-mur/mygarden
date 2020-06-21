@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace MyGarden.Domain.Garden
 {
-    public class Garden : Entity<Guid>
+    public class GardenModel : Entity<Guid>
     {
         public UserId UserId { get; protected set; }
         public ISet<Plant> Plants {get; protected set;}

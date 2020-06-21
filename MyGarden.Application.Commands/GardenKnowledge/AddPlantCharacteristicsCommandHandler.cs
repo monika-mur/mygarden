@@ -7,6 +7,7 @@ using MyGarden.Domain;
 using AutoMapper;
 using MyGarden.GardenKnowledge.Domain;
 using Microsoft.EntityFrameworkCore;
+using Garden.Domain.GardenKnowledge.Plants;
 
 namespace Garden.Application.Commands.GardenKnowledge
 {
@@ -23,10 +24,9 @@ namespace Garden.Application.Commands.GardenKnowledge
 
         public async Task<int> Handle(AddPlantCharacteristicsCommand command, CancellationToken cancellationToken)
         {
-            var sowingDate = _mapper.Map<GardeningDate>(command.SowingDate);
-            var spacing = _mapper.Map<PlantSpacing>(command.Spacing);
+            var sowing = _mapper.Map<Sowing>(command.Sowing);
             var floweringTime = _mapper.Map<GardeningDate>(command.FloweringTime);
-            var plantCharacteristics = new PlantCharacteristics(command.Name, command.LatinName, sowingDate, spacing, floweringTime);
+            var plantCharacteristics = new PlantCharacteristics(command.Names, command.LatinName, sowing, floweringTime);
 
             _dbContext.Add(plantCharacteristics);
             return await _dbContext.SaveChangesAsync();

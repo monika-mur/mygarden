@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace MyGarden.Web.Controllers
 {
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class GardenKnowledgeController
     {
         private readonly IPlantKnowledgeRepository _plantKnowledgeRepository;

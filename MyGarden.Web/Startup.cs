@@ -7,12 +7,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyGarden.Infrastructure;
-using System.Reflection;
 
 namespace MyGarden
 {
     public class Startup
     {
+        private readonly string swaggerVersion = "v1";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -25,7 +26,7 @@ namespace MyGarden
         {
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "My Garden API", Version = "v1" });
+                c.SwaggerDoc(swaggerVersion, new Microsoft.OpenApi.Models.OpenApiInfo { Title = "My Garden API", Version = swaggerVersion });
             });
 
             services.AddControllers();
@@ -45,6 +46,14 @@ namespace MyGarden
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint($"/swagger/{swaggerVersion}/swagger.json", "My Garden API");
+                c.RoutePrefix = string.Empty;
+            });
 
             app.UseHttpsRedirection();
 

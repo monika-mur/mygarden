@@ -3,6 +3,7 @@
     public enum ActionType
     {
         Other = 0,
+        Planting,
         Fertilization,
         Bursting
     }
