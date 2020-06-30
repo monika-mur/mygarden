@@ -9,7 +9,7 @@ namespace Garden.Contract.Commands.GardenKnowledge
 
         public IEnumerable<Season> Seasons { get; set; }
 
-        public DurationDto Duration { get; }
+        public DurationDto Duration { get; set;  }
     }
 
     public class DurationDto

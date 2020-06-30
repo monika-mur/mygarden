@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using MyGarden.Domain;
-using MyGarden.GardenKnowledge.Domain;
 
 namespace MyGarden.Controllers
 {

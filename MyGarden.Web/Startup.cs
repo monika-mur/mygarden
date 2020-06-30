@@ -36,7 +36,7 @@ namespace MyGarden
                 b => b.MigrationsAssembly("MyGarden.Web")));
 
             var config = new MapperConfiguration(c => c.AddMaps(typeof(AddPlantCharacteristicsCommandHandler).Assembly));
-            services.AddSingleton<IMapper>(s => config.CreateMapper());         
+            services.AddSingleton(s => config.CreateMapper());         
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -8,8 +8,7 @@ namespace Garden.Contract.Commands.GardenKnowledge
         public IEnumerable<string> Names { get; set; }
         public string LatinName { get; set; }
         public IEnumerable<GardenActionDto> GardenActions { get; set; }
-        public SowingDto SowingDate { get; set; }
+        public SowingDto Sowing { get; set; }
         public GardeningDateDto FloweringTime { get; set; }
-        public object Sowing { get; set; }
     }
 }
