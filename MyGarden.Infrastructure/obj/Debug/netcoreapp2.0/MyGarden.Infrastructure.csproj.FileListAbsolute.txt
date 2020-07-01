@@ -1,5 +1,0 @@
-C:\mygarden\MyGarden.Infrastructure\bin\Debug\netcoreapp2.0\MyGarden.Domain.dll
-C:\mygarden\MyGarden.Infrastructure\bin\Debug\netcoreapp2.0\MyGarden.Identifiers.dll
-C:\mygarden\MyGarden.Infrastructure\obj\Debug\netcoreapp2.0\MyGarden.Infrastructure.csprojAssemblyReference.cache
-C:\mygarden\MyGarden.Infrastructure\obj\Debug\netcoreapp2.0\MyGarden.Infrastructure.AssemblyInfoInputs.cache
-C:\mygarden\MyGarden.Infrastructure\obj\Debug\netcoreapp2.0\MyGarden.Infrastructure.AssemblyInfo.cs
