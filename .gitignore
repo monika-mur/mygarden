@@ -1,15 +1,6 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
-
-/MyGarden.Application.Commands/bin/Debug/netstandard2.0
-/MyGarden.Application.Commands/obj/Debug/netstandard2.0
-/MyGarden.Application.Commands/obj
-/MyGarden.Contract/bin/Debug/netstandard2.0
-/MyGarden.Contract/obj/Debug/netstandard2.0
-/MyGarden.Contract/obj
-/MyGarden.Contract.Queries/bin/Debug/netstandard2.0
-/MyGarden.Contract.Queries/obj/Debug/netstandard2.0
-/MyGarden.Contract.Queries/obj
-/MyGarden.Infrastructure/bin/Debug/netstandard2.0/Garden.Domain.dll
-/MyGarden.Web/obj/Debug/netcoreapp2.0/MyGarden.Web.csprojAssemblyReference.cache
+/.vs/*
+**/bin
+**/obj

@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using Garden.Application.Commands.GardenKnowledge;
 using Garden.Contract.Commands.GardenKnowledge;
 using Garden.Gateway;
