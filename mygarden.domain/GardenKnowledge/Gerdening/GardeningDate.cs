@@ -1,4 +1,6 @@
 ﻿using MyGarden.Domain;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace MyGarden.GardenKnowledge.Domain
@@ -7,18 +9,42 @@ namespace MyGarden.GardenKnowledge.Domain
     {
         protected GardeningDate() { }
 
-        public IEnumerable<Month> Months { get; }
+        public IList<Month> Months { get; }
 
-        public IEnumerable<Season> Seasons { get; }
+        public IList<Season> Seasons { get; }
+
+        public double MonthsSummary
+        {
+            get => GetMonthsSummary(Months);
+            set => SetMonths(value);
+        }
+
+        private int GetMonthsSummary(IEnumerable<Month> months)
+        {
+            var result = 0.0;
+            foreach (var month in months)
+                result += Math.Pow(2, (double)(month - 1));
+            return (int)result;
+        }
+
+        private void SetMonths(double monthsSummary)
+        {
+            var monthsSummaryBits = new BitArray(BitConverter.GetBytes(monthsSummary));
+            for (int i = monthsSummaryBits.Length - 1; i >= monthsSummaryBits.Length - 13; i--)
+            {
+                if (monthsSummaryBits[i])
+                    Months.Add((Month)(monthsSummaryBits.Length-i));
+            }
+        }
 
         public Duration Duration { get; }
 
-        public GardeningDate(IEnumerable<Month> months)
+        public GardeningDate(IList<Month> months)
         {
             Months = months;
         }
 
-        public GardeningDate(IEnumerable<Season> seasons)
+        public GardeningDate(IList<Season> seasons)
         {
             Seasons = seasons;
         }

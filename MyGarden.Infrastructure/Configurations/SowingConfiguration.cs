@@ -8,7 +8,7 @@ namespace Garden.Infrastructure.Configurations
     {
         public void Configure(EntityTypeBuilder<Sowing> builder)
         {
-            builder.ToTable("SowingAction");
+            builder.ToTable("Sowing");
         }
     }
 }
