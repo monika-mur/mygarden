@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using CommandBase;
 using Garden.Contract.Commands.GardenKnowledge;
-using MediatR;
 using MyGarden.Domain;
 using AutoMapper;
 using MyGarden.GardenKnowledge.Domain;

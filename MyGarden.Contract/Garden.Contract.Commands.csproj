@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CommandBase\CommandBase.csproj" />
-    <ProjectReference Include="..\Garden.Gateway\Garden.Gateway.csproj" />
+    <ProjectReference Include="..\mygarden.domain\Garden.Domain.csproj" />
   </ItemGroup>
 
 </Project>

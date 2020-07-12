@@ -1,7 +1,6 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using CommandBase;
-using MediatR;
 using MyGarden.Contract.Commands;
 
 namespace MyGarden.Application.Commands

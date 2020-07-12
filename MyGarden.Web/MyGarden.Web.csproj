@@ -18,7 +18,6 @@
   <ItemGroup>
     <ProjectReference Include="..\MyGarden.Application.Commands\Garden.Application.Commands.csproj" />
     <ProjectReference Include="..\MyGarden.Application\Garden.Application.Queries.csproj" />
-    <ProjectReference Include="..\MyGarden.Contract\Garden.Contract.Commands.csproj" />
     <ProjectReference Include="..\mygarden.domain\Garden.Domain.csproj" />
     <ProjectReference Include="..\MyGarden.Identifiers\Garden.Identifiers.csproj" />
     <ProjectReference Include="..\MyGarden.Infrastructure\Garden.Infrastructure.csproj" />
