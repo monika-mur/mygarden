@@ -5,17 +5,17 @@ using Garden.Contract.Commands.GardenKnowledge;
 using MyGarden.Domain;
 using AutoMapper;
 using MyGarden.GardenKnowledge.Domain;
-using Microsoft.EntityFrameworkCore;
 using Garden.Domain.GardenKnowledge.Plants;
+using MyGarden.Infrastructure;
 
 namespace Garden.Application.Commands.GardenKnowledge
 {
     public class AddPlantCharacteristicsCommandHandler : ICommandHandler<AddPlantCharacteristicsCommand, int>
     {
         private readonly IMapper _mapper;
-        private readonly DbContext _dbContext;
+        private readonly GardenDbContext _dbContext;
 
-        public AddPlantCharacteristicsCommandHandler(IMapper mapper, DbContext dbContext)
+        public AddPlantCharacteristicsCommandHandler(IMapper mapper, GardenDbContext dbContext)
         {
             _mapper = mapper;
             _dbContext = dbContext;

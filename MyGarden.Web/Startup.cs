@@ -10,6 +10,9 @@ using Microsoft.Extensions.Hosting;
 using MyGarden.Domain.GardenKnowledge.Plants;
 using MyGarden.Infrastructure;
 using MediatR;
+using CommandBase;
+using MyGarden.Web;
+using Garden.Gateway;
 
 namespace MyGarden
 {
@@ -38,12 +41,14 @@ namespace MyGarden
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
                 b => b.MigrationsAssembly("MyGarden.Web")));
 
-            var config = new MapperConfiguration(c => c.AddMaps(typeof(AddPlantCharacteristicsCommandHandler).Assembly));
+            var config = new MapperConfiguration(c => c.AddMaps(typeof(GardenMappingProfile).Assembly));
             services.AddSingleton(s => config.CreateMapper());
 
             services.AddTransient<IPlantKnowledgeRepository, PlantKnowledgeRepository>();
 
             services.AddMediatR(typeof(Startup));
+
+            services.AddCommandQueryHandlers(typeof(IRequestHandler<,>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -73,5 +78,7 @@ namespace MyGarden
                 endpoints.MapControllers();
             });
         }
+
+
     }
 }
