@@ -11,11 +11,13 @@ namespace MyGarden.Infrastructure.Configurations
         {
             builder.ToTable("PlantCharacteristics");
 
-            builder.HasOne(x => x.Sowing).WithOne().HasForeignKey<Sowing>(x => x.PlantChracteristicsId);
+            builder.HasOne(x => x.Sowing).WithOne().HasForeignKey<Sowing>(x => x.PlantCharacteristicsId);
 
             builder.OwnsOne(x => x.FloweringTime);
 
             builder.HasMany(x => x.GardenActions);
+
+            builder.HasMany(x => x.Names);
         }
     }
 }

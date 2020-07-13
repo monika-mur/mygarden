@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyGarden.Infrastructure;
 
 namespace MyGarden.Web.Migrations
 {
     [DbContext(typeof(GardenDbContext))]
-    partial class GardenDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200712231203_AddSowingTableAndNamesTable")]
+    partial class AddSowingTableAndNamesTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

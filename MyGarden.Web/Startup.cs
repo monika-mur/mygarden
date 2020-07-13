@@ -1,12 +1,15 @@
 using AutoMapper;
 using Garden.Application.Commands.GardenKnowledge;
+using Garden.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MyGarden.Domain.GardenKnowledge.Plants;
 using MyGarden.Infrastructure;
+using MediatR;
 
 namespace MyGarden
 {
@@ -36,7 +39,11 @@ namespace MyGarden
                 b => b.MigrationsAssembly("MyGarden.Web")));
 
             var config = new MapperConfiguration(c => c.AddMaps(typeof(AddPlantCharacteristicsCommandHandler).Assembly));
-            services.AddSingleton(s => config.CreateMapper());         
+            services.AddSingleton(s => config.CreateMapper());
+
+            services.AddTransient<IPlantKnowledgeRepository, PlantKnowledgeRepository>();
+
+            services.AddMediatR(typeof(Startup));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

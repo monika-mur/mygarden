@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Garden.Infrastructure.Configurations;
+using Microsoft.EntityFrameworkCore;
 using MyGarden.Domain;
 using MyGarden.Domain.Garden;
 using MyGarden.Infrastructure.Configurations;
@@ -20,6 +21,8 @@ namespace MyGarden.Infrastructure
             builder.ApplyConfiguration(new PlantCharacteristicsConfiguration());
             builder.ApplyConfiguration(new GardenConfiguration());
             builder.ApplyConfiguration(new GardenActionConfiguration());
+            builder.ApplyConfiguration(new SowingConfiguration());
+            builder.ApplyConfiguration(new NameConfiguration());
 
             builder.Entity<User>().ToTable("Users");
         }
