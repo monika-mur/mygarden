@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MyGarden.Contract\Garden.Contract.Commands.csproj" />
+    <ProjectReference Include="..\Garden.Contract\Garden.Contract.csproj" />
     <ProjectReference Include="..\mygarden.domain\Garden.Domain.csproj" />
     <ProjectReference Include="..\MyGarden.Identifiers\Garden.Identifiers.csproj" />
   </ItemGroup>

@@ -5,11 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="9.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Garden.Contract\Garden.Contract.csproj" />
+    <ProjectReference Include="..\CommandBase\CommandBase.csproj" />
+    <ProjectReference Include="..\mygarden.domain\Garden.Domain.csproj" />
   </ItemGroup>
 
 </Project>

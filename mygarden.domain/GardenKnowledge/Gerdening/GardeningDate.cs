@@ -2,18 +2,21 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace MyGarden.GardenKnowledge.Domain
 {
     public class GardeningDate : ValueObject
     {
-        protected GardeningDate() { }
+        protected GardeningDate() {
+            Months = new List<Month>();
+        }
 
         public IList<Month> Months { get; }
 
         public IList<Season> Seasons { get; }
 
-        public double MonthsSummary
+        public int MonthsSummary
         {
             get => GetMonthsSummary(Months);
             set => SetMonths(value);
@@ -27,13 +30,13 @@ namespace MyGarden.GardenKnowledge.Domain
             return (int)result;
         }
 
-        private void SetMonths(double monthsSummary)
+        private void SetMonths(int monthsSummary)
         {
-            var monthsSummaryBits = new BitArray(BitConverter.GetBytes(monthsSummary));
-            for (int i = monthsSummaryBits.Length - 1; i >= monthsSummaryBits.Length - 13; i--)
+            var months = Convert.ToString(monthsSummary, 2);
+            for (int i = months.Length - 1; i >= 0; i--)
             {
-                if (monthsSummaryBits[i])
-                    Months.Add((Month)(monthsSummaryBits.Length-i));
+                if (Convert.ToBoolean(Char.GetNumericValue(months[i])))
+                    Months.Add((Month)(months.Length - i));
             }
         }
 

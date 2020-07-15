@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Garden.Application.Queries
+﻿namespace Garden.Application.Queries
 {
-    class ActionsForPlantQueryHandler
+    public class ActionsForPlantQueryHandler
     {
     }
 }

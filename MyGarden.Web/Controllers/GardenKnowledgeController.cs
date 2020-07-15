@@ -1,39 +1,35 @@
 ﻿using System.Collections.Generic;
-using MyGarden.Domain.GardenKnowledge.Plants;
-using MyGarden.Domain;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Garden.Contract.Commands.GardenKnowledge;
 using MediatR;
 using Microsoft.AspNetCore.Http;
+using Garden.Contract.Dtos;
+using Garden.Contract.Queries.GardenKnowledge;
 
 namespace MyGarden.Web.Controllers
 {
     [Route("[controller]/[action]")]
     public class GardenKnowledgeController
     {
-        private readonly IPlantKnowledgeRepository _plantKnowledgeRepository;
         private readonly IMediator _mediator;
 
-        public GardenKnowledgeController(IPlantKnowledgeRepository plantKnowledgeRepository, IMediator mediator)
+        public GardenKnowledgeController(IMediator mediator)
         {
-            _plantKnowledgeRepository = plantKnowledgeRepository;
             _mediator = mediator;
         }
 
         [HttpGet]
-        public IEnumerable<PlantCharacteristics> GetAllPlants()
+        public async Task<IList<PlantCharacteristicsDto>> GetPlants(PlantsCharacteristicsQuery query)
         {
-            return _plantKnowledgeRepository.GetAllPlants();
+            return await _mediator.Send(query);
         }
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> AddPlantCharacteristics([FromBody]AddPlantCharacteristicsCommand command)
+        public async Task AddPlantCharacteristics([FromBody]AddPlantCharacteristicsCommand command)
         {
-            var commandResult = await _mediator.Send(command);
-            return commandResult > 0 ? (IActionResult)new OkObjectResult(commandResult) : new BadRequestResult();
+            await _mediator.Send(command);
         }
     }
 }

@@ -7,6 +7,7 @@ using Xunit;
 using Garden.Application.Commands.GardenKnowledge;
 using System.Linq;
 using Garden.Gateway;
+using Garden.Contract.Dtos;
 
 namespace Garden.Tests
 {

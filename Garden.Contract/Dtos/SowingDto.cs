@@ -1,4 +1,4 @@
-﻿namespace Garden.Contract.Commands.GardenKnowledge
+﻿namespace Garden.Contract.Dtos
 {
     public class SowingDto
     {

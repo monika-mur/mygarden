@@ -1,6 +1,7 @@
-﻿using MyGarden.GardenKnowledge.Domain;
+﻿using Garden.Contract.Commands.GardenKnowledge;
+using MyGarden.GardenKnowledge.Domain;
 
-namespace Garden.Contract.Commands.GardenKnowledge
+namespace Garden.Contract.Dtos
 {
     public class GardenActionDto
     {

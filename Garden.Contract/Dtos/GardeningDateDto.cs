@@ -1,7 +1,7 @@
 ﻿using MyGarden.GardenKnowledge.Domain;
 using System.Collections.Generic;
 
-namespace Garden.Contract.Commands.GardenKnowledge
+namespace Garden.Contract.Dtos
 {
     public class GardeningDateDto
     {

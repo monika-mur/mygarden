@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyGarden.Application.Commands\Garden.Application.Commands.csproj" />
-    <ProjectReference Include="..\MyGarden.Contract\Garden.Contract.Commands.csproj" />
     <ProjectReference Include="..\MyGarden.Infrastructure\Garden.Infrastructure.csproj" />
   </ItemGroup>
 
